@@ -3,23 +3,23 @@ import localFont from "next/font/local";
 export const sfPro = localFont({
 	src: [
 		{
-			path: "../public/fonts/SFPRODISPLAYREGULAR.OTF",
+			path: "../public/fonts/SFPRODISPLAYREGULAR.otf",
 			weight: "400",
 			style: "normal",
 		},
 		{
-			path: "../public/fonts/SFPRODISPLAYMEDIUM.OTF",
+			path: "../public/fonts/SFPRODISPLAYMEDIUM.otf",
 			weight: "500",
 			style: "medium",
 		},
 		{
-			path: "../public/fonts/SFPRODISPLAYBOLD.OTF",
+			path: "../public/fonts/SFPRODISPLAYBOLD.otf",
 			weight: "700",
 			style: "bold",
 		},
 		{
-			path: "../public/fonts/SFPRODISPLAYTHINITALIC.OTF",
-			weight: "400",
+			path: "../public/fonts/SFPRODISPLAYLIGHTITALIC.otf",
+			weight: "300",
 			style: "italic",
 		},
 	],
