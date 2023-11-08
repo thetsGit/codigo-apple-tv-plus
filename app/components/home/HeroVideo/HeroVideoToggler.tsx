@@ -1,9 +1,8 @@
-import React, { useEffect, useRef, FC } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { FC } from "react";
 import { VideoPlayButton } from "@/app/components/utils";
 import { SetState } from "@/app/types/shared";
 import { Spinner } from "@/app/components/utils";
+import { useScrollBasedAnimation } from "@/app/hooks";
 
 type HeroVideoTogglerProps = {
 	play: boolean;
@@ -16,31 +15,20 @@ export const HeroVideoToggler: FC<HeroVideoTogglerProps> = ({
 	setPlay,
 	isLoading,
 }) => {
-	const animateRef = useRef(null);
-
-	useEffect(() => {
-		gsap.registerPlugin(ScrollTrigger);
-		const element = animateRef.current;
-
-		if (element) {
-			gsap.fromTo(
-				element,
-				{
-					opacity: 1,
-				},
-				{
-					opacity: 0,
-					duration: 1,
-					scrollTrigger: {
-						trigger: element,
-						start: "top 80%",
-						end: "bottom 0%",
-						scrub: 0.5,
-					},
-				}
-			);
+	const animateRef = useScrollBasedAnimation(
+		{
+			opacity: 1,
+		},
+		{
+			opacity: 0,
+			duration: 1,
+			scrollTrigger: {
+				start: "top 80%",
+				end: "bottom 0%",
+				scrub: 0.5,
+			},
 		}
-	}, []);
+	);
 
 	return (
 		<div
