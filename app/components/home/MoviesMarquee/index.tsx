@@ -17,10 +17,10 @@ export const MoviesMarquee = () => {
 
 	// generate double marquee sections by fake populating with Array func
 	return (
-		<div className="w-full flex gap-6 flex-col bg-dark py-12">
+		<div className="w-full flex gap-6 flex-col bg-dark py-12 relative z-500">
 			{new Array(2).fill(null).map((_, index) => (
 				<Marquee
-					key={index}
+					key={index} // using index as key here is fine since the item count is fixed in any case
 					speed={50 * (index + 1)} // calculate marquee speed using indexes to differ rotation speed between subsequent marquees
 					className="text-white gap-3 m-0"
 					pauseOnHover
@@ -30,7 +30,7 @@ export const MoviesMarquee = () => {
 							key={movie.name}
 							className="relative w-[378px] h-[212px] rounded-xl overflow-hidden mr-5">
 							<Image
-								src={movie.posterLink}
+								src={movie.posterUrl}
 								fill={true}
 								alt={movie.name}
 							/>

@@ -3,6 +3,7 @@ import {
 	Pricings,
 	SpecialFeatures,
 	MoviesMarquee,
+	AppleDevices,
 } from "./components/home";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
 			<SpecialFeatures />
 			<Pricings />
 			<MoviesMarquee />
+			<AppleDevices />
 		</main>
 	);
 }

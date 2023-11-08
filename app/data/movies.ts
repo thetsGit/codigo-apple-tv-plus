@@ -1,7 +1,7 @@
 export const Movies = [
 	{
 		name: "the railway man",
-		posterLink: "/movies/the-railway-man.webp",
+		posterUrl: "/movies/the-railway-man.webp",
 		genre: "thriller",
 		quote: "Lorem ipsum super quote",
 		openTime: "new release",
@@ -10,7 +10,7 @@ export const Movies = [
 	},
 	{
 		name: "1917",
-		posterLink: "/movies/1917.jpeg",
+		posterUrl: "/movies/1917.jpeg",
 		genre: "crime",
 		quote: "Lorem ipsum super quote",
 		openTime: "Dec 9 2023",
@@ -19,7 +19,7 @@ export const Movies = [
 	},
 	{
 		name: "lord of the rings",
-		posterLink: "/movies/lord-of-the-rings.jpeg",
+		posterUrl: "/movies/lord-of-the-rings.jpeg",
 		genre: "drama",
 		quote: "Lorem ipsum super quote",
 		openTime: "This Winter",
@@ -28,7 +28,7 @@ export const Movies = [
 	},
 	{
 		name: "no time to die",
-		posterLink: "/movies/no-time-to-die.webp",
+		posterUrl: "/movies/no-time-to-die.webp",
 		genre: "crime",
 		quote: "Lorem ipsum super quote",
 		openTime: "this summer",
@@ -37,7 +37,7 @@ export const Movies = [
 	},
 	{
 		name: "oblivion",
-		posterLink: "/movies/oblivion.jpeg",
+		posterUrl: "/movies/oblivion.jpeg",
 		genre: "comedy",
 		quote: "Lorem ipsum super quote",
 		openTime: "new release",
@@ -46,7 +46,7 @@ export const Movies = [
 	},
 	{
 		name: "suite fransaise",
-		posterLink: "/movies/suite-fransaise.webp",
+		posterUrl: "/movies/suite-fransaise.webp",
 		genre: "science",
 		quote: "Lorem ipsum super quote",
 		openTime: "This month",
@@ -55,7 +55,7 @@ export const Movies = [
 	},
 	{
 		name: "the shawshank redemption",
-		posterLink: "/movies/the-shawshank-redemption.webp",
+		posterUrl: "/movies/the-shawshank-redemption.webp",
 		genre: "documentary",
 		quote: "Lorem ipsum super quote",
 		openTime: "Nov 13 2022",
@@ -64,7 +64,7 @@ export const Movies = [
 	},
 	{
 		name: "captain america",
-		posterLink: "/movies/captain-america.jpeg",
+		posterUrl: "/movies/captain-america.jpeg",
 		genre: "super-heroes",
 		quote: "Lorem ipsum super quote",
 		openTime: "new release",
