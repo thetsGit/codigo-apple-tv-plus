@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const HeroSection = () => {
 	return (
@@ -10,11 +11,11 @@ export const HeroSection = () => {
 					Only on Apple TV+
 				</h3>
 
-				<button
-					type="button"
-					className="bg-white text-black rounded-full font-medium px-8 py-4 hover:opacity-90 transition-all tracking-wide mb-20">
+				<Link
+					href="#"
+					className="bg-white text-black rounded-full font-medium px-8 py-4 hover:opacity-90 transition-all tracking-wide mb-20 inline-block">
 					Stream now
-				</button>
+				</Link>
 
 				<p className="text-lg">
 					Watch on the
