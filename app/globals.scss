@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$background: #f8f8f8;
+$font-size-desktop: 16px;
+$font-size-tablet: 14px;
+$font-size-mobile: 12px;
+
+:root {
+	/* for mobile first responsive font sizes */
+	font-size: $font-size-mobile;
+}
+
+body {
+	background: $background;
+}
+
+/* enhance fontsizes as the screen gets larger */
+@media (min-width: 640px) {
+	:root {
+		font-size: $font-size-tablet;
+	}
+}
+
+@media (min-width: 1200px) {
+	:root {
+		font-size: $font-size-desktop;
+	}
+}
