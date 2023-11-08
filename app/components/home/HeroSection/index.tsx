@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export const HeroSection = () => {
 	return (
-		<div className="flex h-screen w-full justify-end flex-col text-white py-12 z-mainContent">
+		<div className="flex h-screen w-full justify-end flex-col text-white py-6 lg:py-12 z-mainContent px-8 sm:px-16">
 			<div className="container mx-auto">
-				<h3 className="text-white text-[4.5rem] font-bold mb-8">
+				<h3 className="text-white text-giant font-bold mb-8">
 					All Apple Originals.
 					<br />
 					Only on Apple TV+

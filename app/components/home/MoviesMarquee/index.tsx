@@ -50,7 +50,7 @@ export const MoviesMarquee = () => {
 				</Marquee>
 			))}
 
-			<div className="flex w-full justify-between items-center container mx-auto mt-4">
+			<div className="flex w-full justify-between items-center container mx-auto mt-4 px-8 sm:px-16">
 				<div />
 
 				<Link

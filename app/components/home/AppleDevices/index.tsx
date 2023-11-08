@@ -4,7 +4,7 @@ import { APPLE_DEVICES } from "@/app/data";
 
 export const AppleDevices = () => {
 	return (
-		<div className="w-full bg-white py-24 z-mainContent">
+		<div className="w-full bg-white py-24 z-mainContent px-8 sm:px-16">
 			<div className="container mx-auto flex justify-center flex-col items-center gap-4">
 				<Image
 					src="/apple-tv-icon.png"
@@ -13,7 +13,7 @@ export const AppleDevices = () => {
 					alt="apple tv icon"
 				/>
 
-				<h2 className="font-bold text-[4.5rem] text-center leading-[1.1]">
+				<h2 className="font-bold text-giant text-center leading-[1.1]">
 					Watch Apple TV+ anywhere <br /> on the Apple TV app.
 				</h2>
 
@@ -28,7 +28,7 @@ export const AppleDevices = () => {
 					</Link>
 				</p>
 
-				<ul className="w-full grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 pt-8">
+				<ul className="w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 pt-8">
 					{APPLE_DEVICES.map((device) => (
 						<li
 							key={device.name}

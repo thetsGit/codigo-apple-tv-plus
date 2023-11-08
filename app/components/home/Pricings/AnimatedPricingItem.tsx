@@ -42,7 +42,9 @@ export const AnimatedPricingItem: FC<AnimatedPricingItemProps> = ({ item }) => {
 		<li ref={animateRef}>
 			<h2 className="text-2xl">{item.eyebrow}</h2>
 
-			<h3 className="text-[2.5rem] font-bold">{item.title}</h3>
+			<h3 className="text-semiGiant font-bold leading-relaxed">
+				{item.title}
+			</h3>
 
 			<p className="text-gray mb-10">
 				{item.description}{" "}

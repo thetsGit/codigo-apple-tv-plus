@@ -5,9 +5,9 @@ import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 export const OtherStreamingDevices = () => {
 	return (
-		<div className="w-full bg-white pb-24 z-mainContent">
+		<div className="w-full bg-white pb-24 z-mainContent px-8 sm:px-16">
 			<div className="container mx-auto flex justify-center flex-col items-center gap-4">
-				<h5 className="font-medium text-[2.5rem] text-center leading-[1.1]">
+				<h5 className="font-medium text-semiGiant text-center leading-[1.1]">
 					See it on your smart TV <br /> or streaming device.
 				</h5>
 
@@ -18,7 +18,7 @@ export const OtherStreamingDevices = () => {
 					<ChevronRightIcon className="h-3 w-3 inline" />
 				</Link>
 
-				<ul className="w-full grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 pt-8">
+				<ul className="w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 pt-8">
 					{OTHER_STREAMING_DEVICES.map((device) => (
 						<li
 							key={device.name}

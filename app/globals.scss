@@ -28,3 +28,13 @@ body {
 		font-size: $font-size-desktop;
 	}
 }
+
+@layer base {
+	.text-giant {
+		@apply text-[3rem] md:text-[3.5rem] lg:text-[4.5rem];
+	}
+
+	.text-semiGiant {
+		@apply text-[2rem] lg:text-[2.5rem];
+	}
+}

@@ -38,7 +38,7 @@ export const AnimatedFeatureItem: FC<AnimatedFeatureItemProps> = ({ name }) => {
 	return (
 		<li
 			ref={animateRef}
-			className="text-white mb-10 text-[3.125rem] font-bold max-w-[1200px] leading-tight">
+			className="text-white mb-10 text-[2rem] md:text-[2.5rem] lg:text-[3.125rem] font-bold max-w-[1200px] leading-tight">
 			{name}
 		</li>
 	);
