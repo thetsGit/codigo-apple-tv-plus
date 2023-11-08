@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export const Navbar = () => {
 	return (
-		<nav className="w-full py-5 bg-light-dark border-b border-gray-700 px-3 fixed top-0 z-navBar">
-			<div className="max-w-6xl flex justify-between items-center m-auto">
+		<nav className="w-full py-5 bg-light-dark border-b border-gray-700 px-3 fixed top-0 z-navBar px-8 sm:px-16">
+			<div className="max-w-4xl flex justify-between items-center m-auto">
 				<Link href="/" className="text-xl font-bold text-white">
 					Apple TV+
 				</Link>
