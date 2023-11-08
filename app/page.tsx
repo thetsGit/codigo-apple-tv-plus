@@ -1,4 +1,5 @@
 "use client";
+// due to the need to toggle the hero video play programmatically outside of itself - use client was unfortunately needed to use here
 
 import { useState } from "react";
 import {
