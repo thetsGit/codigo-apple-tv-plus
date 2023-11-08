@@ -20,7 +20,7 @@ export const HeroSection = () => {
 				<p className="text-lg">
 					Watch on the
 					<Image
-						src="/apple-tv-mini-icon.png"
+						src="/apple-tv-icon.png"
 						width={40}
 						height={40}
 						alt="apple tv mini icon"
