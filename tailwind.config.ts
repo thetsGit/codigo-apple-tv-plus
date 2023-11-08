@@ -26,6 +26,12 @@ const config: Config = {
 				blue: "#2997FF",
 				silver: "#f5f5f7",
 			},
+			zIndex: {
+				navBar: "1000",
+				heroVideoToggler: "500",
+				mainContent: "100",
+				heroVideo: "10",
+			},
 		},
 	},
 	plugins: [require("tailwindcss-aspect-ratio")],

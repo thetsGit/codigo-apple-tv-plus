@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const HeroSection = () => {
 	return (
-		<div className="flex h-screen w-full justify-end flex-col text-white bg-dark py-12">
+		<div className="flex h-screen w-full justify-end flex-col text-white py-12 z-mainContent">
 			<div className="container mx-auto">
 				<h3 className="text-white text-[4.5rem] font-bold mb-8">
 					All Apple Originals.
@@ -13,7 +13,7 @@ export const HeroSection = () => {
 
 				<Link
 					href="/tv"
-					className="bg-white text-black rounded-full font-bold px-8 py-4 hover:opacity-90 transition-all tracking-wide mb-20 inline-block">
+					className="bg-white text-black rounded-full font-bold px-8 py-4 hover:opacity-90 transition-all tracking-wide mb-24 inline-block">
 					Stream now
 				</Link>
 

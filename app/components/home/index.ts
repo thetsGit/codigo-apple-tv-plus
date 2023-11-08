@@ -5,3 +5,4 @@ export * from "./MoviesCarousel";
 export * from "./MoviesMarquee";
 export * from "./AppleDevices";
 export * from "./OtherStreamingDevices";
+export * from "./HeroVideo";

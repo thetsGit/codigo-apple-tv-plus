@@ -4,7 +4,7 @@ import { APPLE_DEVICES } from "@/app/data";
 
 export const AppleDevices = () => {
 	return (
-		<div className="w-full bg-white py-24">
+		<div className="w-full bg-white py-24 z-mainContent">
 			<div className="container mx-auto flex justify-center flex-col items-center gap-4">
 				<Image
 					src="/apple-tv-icon.png"

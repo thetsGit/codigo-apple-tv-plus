@@ -4,7 +4,7 @@ import { PRICINGS } from "@/app/data";
 
 export const Pricings = () => {
 	return (
-		<div className="bg-dark w-full py-12">
+		<div className="bg-dark w-full py-12 z-mainContent">
 			<ul className="flex text-white gap-8 container mx-auto">
 				{PRICINGS.map((price) => (
 					<li key={price.eyebrow}>

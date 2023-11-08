@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Footer = () => {
 	return (
-		<footer className="w-full bg-silver p-3">
+		<footer className="w-full bg-silver p-3 z-navBar relative">
 			<div className="flex justify-center items-center mx-auto">
 				<Image
 					src="/apple-logo.png"

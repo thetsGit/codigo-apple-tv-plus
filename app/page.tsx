@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import {
 	HeroSection,
 	Pricings,
@@ -5,11 +8,31 @@ import {
 	MoviesMarquee,
 	AppleDevices,
 	OtherStreamingDevices,
-} from "./components/home";
+} from "@/app/components/home";
+import dynamic from "next/dynamic";
+import { HeroVideoToggler } from "@/app/components/home/HeroVideo/HeroVideoToggler";
+
+const HeroVideo = dynamic(() => import("@/app/components/home/HeroVideo"), {
+	ssr: false,
+});
 
 export default function Home() {
+	const [isHeroVideoPlaying, setIsHeroVideoPlaying] = useState(true);
+	const [isHeroVideoLoading, setIsHeroVideoLoading] = useState(true);
+
 	return (
-		<main className="flex flex-col items-center justify-between flex flex-col">
+		<main className="flex flex-col items-center justify-between flex flex-col relative">
+			<HeroVideo
+				play={isHeroVideoPlaying}
+				setIsLoading={setIsHeroVideoLoading}
+			/>
+
+			<HeroVideoToggler
+				play={isHeroVideoPlaying}
+				setPlay={setIsHeroVideoPlaying}
+				isLoading={isHeroVideoLoading}
+			/>
+
 			<HeroSection />
 			<SpecialFeatures />
 			<Pricings />

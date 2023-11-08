@@ -11,13 +11,14 @@ import {
 	PauseIcon,
 } from "@heroicons/react/24/solid";
 import { useState } from "react";
+import { VideoPlayButton } from "../../utils";
 
 export const MoviesMarquee = () => {
 	const [play, setPlay] = useState(true);
 
 	// generate double marquee sections by fake populating with Array func
 	return (
-		<div className="w-full flex flex-col bg-dark py-12">
+		<div className="w-full flex flex-col bg-dark py-12 z-mainContent">
 			{new Array(2).fill(null).map((_, index) => (
 				<Marquee
 					key={index} // using index as key here is fine since the item count is fixed in any case
@@ -59,18 +60,7 @@ export const MoviesMarquee = () => {
 					<ChevronRightIcon className="h-3 w-3 inline" />
 				</Link>
 
-				<div>
-					<button
-						type="button"
-						onClick={() => setPlay((play) => !play)}
-						className="border border-white rounded-full w-[2rem] h-[2rem] flex justify-center items-center">
-						{play ? (
-							<PauseIcon className="h-4 w-4 inline text-white" />
-						) : (
-							<PlayIcon className="h-4 w-4 inline text-white" />
-						)}
-					</button>
-				</div>
+				<VideoPlayButton play={play} setPlay={setPlay} />
 			</div>
 		</div>
 	);

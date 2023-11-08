@@ -2,7 +2,7 @@ import { SPECIAL_FEATURES } from "@/app/data";
 
 export const SpecialFeatures = () => {
 	return (
-		<div className="w-full bg-dark py-12">
+		<div className="w-full bg-dark py-12 z-mainContent">
 			<ul className="container mx-auto">
 				{SPECIAL_FEATURES.map((feature) => (
 					<li
