@@ -18,7 +18,9 @@ const config: Config = {
 				"2xl": "1.5rem", // 24px
 			},
 			colors: {
-				// extracted from figma
+				"light-dark": "#161617CC",
+				dark: "#000",
+				white: "#fff",
 				active: "#FDCE29",
 				highlight: "#0F6DB0",
 				selected: "#1D1C1C",
@@ -38,18 +40,7 @@ const config: Config = {
 				"app-mini-gradient":
 					"linear-gradient(180deg, #FFFFFF50 0%, #FFFFFF 100%)",
 			},
-			zIndex: {
-				cardPaper: "10",
-				cardImage: "20",
-				gradientBg: "50",
-				topnav: "1000",
-				searchBar: "800",
-				cart: "1500",
-				scrollToTop: "1500",
-				// cart box related's'
-				clearAll: "30",
-				miniGradientBg: "20", // which appears below the 'clear all' btn
-			},
+			zIndex: {},
 		},
 	},
 	plugins: [require("tailwindcss-aspect-ratio")],
