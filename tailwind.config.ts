@@ -33,6 +33,10 @@ const config: Config = {
 				animatedOverlay: "50",
 				heroVideo: "10",
 			},
+			backgroundImage: {
+				"movie-carousel-active-card":
+					"linear-gradient(180deg, #00000080 0%, #ffffff00 50%, #00000080 100%)",
+			},
 		},
 	},
 	plugins: [require("tailwindcss-aspect-ratio")],

@@ -5,6 +5,7 @@ import {
 	HeroSection,
 	Pricings,
 	SpecialFeatures,
+	MoviesCarousel,
 	MoviesMarquee,
 	AppleDevices,
 	OtherStreamingDevices,
@@ -39,6 +40,7 @@ export default function Home() {
 			<HeroSection />
 			<SpecialFeatures />
 			<Pricings />
+			<MoviesCarousel />
 			<MoviesMarquee />
 			<AppleDevices />
 			<OtherStreamingDevices />

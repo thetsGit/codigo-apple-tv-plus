@@ -16,6 +16,16 @@ body {
 	background: $background;
 }
 
+.react-multi-carousel-item--active {
+	& .carousel-item-overlay {
+		opacity: 0;
+	}
+
+	& .carousel-item-content {
+		opacity: 1;
+	}
+}
+
 /* enhance fontsizes as the screen gets larger */
 @media (min-width: 640px) {
 	:root {
