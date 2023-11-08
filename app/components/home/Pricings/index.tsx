@@ -40,7 +40,7 @@ export const Pricings = () => {
 		<section className="flex text-white gap-8">
 			{PRICES.map((price) => (
 				<div key={price.title}>
-					<h2 className="text-xl">{price.title}</h2>
+					<h2 className="text-2xl">{price.title}</h2>
 
 					<h3 className="text-[2.5rem] font-bold">{price.type}</h3>
 
