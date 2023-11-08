@@ -1,7 +1,7 @@
 import {
 	HeroSection,
 	Pricings,
-	Benefits,
+	SpecialFeatures,
 	MoviesMarquee,
 } from "./components/home";
 
@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<main className="flex flex-col items-center justify-between flex flex-col">
 			<HeroSection />
-			<Benefits />
+			<SpecialFeatures />
 			<Pricings />
 			<MoviesMarquee />
 		</main>

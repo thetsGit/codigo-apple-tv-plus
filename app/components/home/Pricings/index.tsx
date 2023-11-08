@@ -19,7 +19,7 @@ export const Pricings = () => {
 							{price?.learnMoreLink && (
 								<Link
 									href={price?.learnMoreLink}
-									className="text-blue hover:opacity-80 transition-all">
+									className="text-blue hover:underline transition-all">
 									Learn more{" "}
 									<ChevronRightIcon className="h-3 w-3 inline" />
 								</Link>

@@ -1,6 +1,6 @@
 import { BENEFITS } from "@/app/data";
 
-export const Benefits = () => {
+export const SpecialFeatures = () => {
 	return (
 		<div className="w-full bg-dark py-12">
 			<ul className="container mx-auto">
