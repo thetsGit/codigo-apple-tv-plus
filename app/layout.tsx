@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { sfPro } from "./fonts";
 import "./globals.scss";
-import { Navbar } from "./components";
+import { Navbar, Footer } from "./components";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -18,6 +18,7 @@ export default function RootLayout({
 			<body className={`${sfPro.className} antialiased tracking-wide`}>
 				<Navbar />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

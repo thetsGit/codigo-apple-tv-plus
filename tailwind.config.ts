@@ -24,21 +24,8 @@ const config: Config = {
 				gray: "#a1a1a6",
 				"dark-80": "#00000080",
 				blue: "#2997FF",
+				silver: "#f5f5f7",
 			},
-			boxShadow: {
-				app: "0px 4px 10px 0px rgba(0, 0, 0, 0.03)",
-				button: "0px 3px 5px 0px rgba(0, 0, 0, 0.07)",
-			},
-			lineHeight: {
-				reduced: "0.75",
-			},
-			backgroundImage: {
-				"app-gradient":
-					"linear-gradient(180deg, #FFFFFF01 0%, #F8F8F8 100%)",
-				"app-mini-gradient":
-					"linear-gradient(180deg, #FFFFFF50 0%, #FFFFFF 100%)",
-			},
-			zIndex: {},
 		},
 	},
 	plugins: [require("tailwindcss-aspect-ratio")],
