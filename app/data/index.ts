@@ -1,4 +1,4 @@
 export * from "./pricings";
-export * from "./benefits";
+export * from "./specialFeatures";
 export * from "./movies";
 export * from "./devices";

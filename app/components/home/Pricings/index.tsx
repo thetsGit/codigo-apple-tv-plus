@@ -5,9 +5,9 @@ import { PRICINGS } from "@/app/data";
 export const Pricings = () => {
 	return (
 		<div className="bg-dark w-full py-12">
-			<div className="flex text-white gap-8 container mx-auto">
+			<ul className="flex text-white gap-8 container mx-auto">
 				{PRICINGS.map((price) => (
-					<div key={price.eyebrow}>
+					<li key={price.eyebrow}>
 						<h2 className="text-2xl">{price.eyebrow}</h2>
 
 						<h3 className="text-[2.5rem] font-bold">
@@ -31,9 +31,9 @@ export const Pricings = () => {
 							className="bg-white text-sm text-black rounded-full font-bold px-6 py-3 hover:opacity-90 transition-all tracking-wide inline-block">
 							{price.link?.label}
 						</Link>
-					</div>
+					</li>
 				))}
-			</div>
+			</ul>
 		</div>
 	);
 };

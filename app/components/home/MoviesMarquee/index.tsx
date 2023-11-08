@@ -17,12 +17,12 @@ export const MoviesMarquee = () => {
 
 	// generate double marquee sections by fake populating with Array func
 	return (
-		<div className="w-full flex gap-6 flex-col bg-dark py-12 relative z-500">
+		<div className="w-full flex flex-col bg-dark py-12">
 			{new Array(2).fill(null).map((_, index) => (
 				<Marquee
 					key={index} // using index as key here is fine since the item count is fixed in any case
 					speed={50 * (index + 1)} // calculate marquee speed using indexes to differ rotation speed between subsequent marquees
-					className="text-white gap-3 m-0"
+					className="text-white gap-3 m-0 bg-dark relative pb-6"
 					pauseOnHover
 					play={play}>
 					{Movies.map((movie) => (
@@ -54,7 +54,7 @@ export const MoviesMarquee = () => {
 
 				<Link
 					href="#"
-					className="border-white border text-white text-xs rounded-full font-bold px-6 py-3 hover:opacity-50 transition-all inline duration-300">
+					className="border-white border text-white text-xs rounded-full font-bold px-6 py-3 hover:opacity-80 transition-all inline duration-300">
 					See full lineup{" "}
 					<ChevronRightIcon className="h-3 w-3 inline" />
 				</Link>

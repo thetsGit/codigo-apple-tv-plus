@@ -4,6 +4,7 @@ import {
 	SpecialFeatures,
 	MoviesMarquee,
 	AppleDevices,
+	OtherStreamingDevices,
 } from "./components/home";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
 			<Pricings />
 			<MoviesMarquee />
 			<AppleDevices />
+			<OtherStreamingDevices />
 		</main>
 	);
 }

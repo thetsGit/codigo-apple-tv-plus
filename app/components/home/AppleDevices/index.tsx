@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { DEVICES } from "@/app/data";
+import { APPLE_DEVICES } from "@/app/data";
 
 export const AppleDevices = () => {
 	return (
@@ -28,13 +28,11 @@ export const AppleDevices = () => {
 					</Link>
 				</p>
 
-				<div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-					{DEVICES.map((device) => (
-						<div
+				<ul className="w-full grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 pt-8">
+					{APPLE_DEVICES.map((device) => (
+						<li
 							key={device.name}
 							className="w-full flex items-center justify-between flex-col">
-							<div className="" />
-
 							<Image
 								src={device.photoUrl}
 								width={80}
@@ -45,9 +43,9 @@ export const AppleDevices = () => {
 							<h3 className="text-center text-lg mt-3 font-medium">
 								{device.name}
 							</h3>
-						</div>
+						</li>
 					))}
-				</div>
+				</ul>
 			</div>
 		</div>
 	);
