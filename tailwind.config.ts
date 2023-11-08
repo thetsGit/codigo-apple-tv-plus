@@ -22,12 +22,8 @@ const config: Config = {
 				dark: "#000",
 				white: "#fff",
 				gray: "#a1a1a6",
+				"dark-80": "#00000080",
 				blue: "#2997FF",
-				active: "#FDCE29",
-				highlight: "#0F6DB0",
-				selected: "#1D1C1C",
-				action: "#298BFD",
-				alert: "#FD2929",
 			},
 			boxShadow: {
 				app: "0px 4px 10px 0px rgba(0, 0, 0, 0.03)",

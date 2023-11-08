@@ -1,3 +1,5 @@
 export * from "./HeroSection";
-export * from "./Pricings";
 export * from "./Benefits";
+export * from "./Pricings";
+export * from "./MoviesCarousel";
+export * from "./MoviesMarquee";

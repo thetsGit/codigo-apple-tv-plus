@@ -15,8 +15,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body
-				className={`${sfPro.className} antialiased tracking-wide bg-dark`}>
+			<body className={`${sfPro.className} antialiased tracking-wide`}>
 				<Navbar />
 				{children}
 			</body>

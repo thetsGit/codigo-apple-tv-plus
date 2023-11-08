@@ -1,11 +1,17 @@
-import { HeroSection, Pricings, Benefits } from "./components/home";
+import {
+	HeroSection,
+	Pricings,
+	Benefits,
+	MoviesMarquee,
+} from "./components/home";
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24 flex flex-col gap-24">
+		<main className="flex flex-col items-center justify-between flex flex-col">
 			<HeroSection />
 			<Benefits />
 			<Pricings />
+			<MoviesMarquee />
 		</main>
 	);
 }

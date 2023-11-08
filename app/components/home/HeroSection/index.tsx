@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export const HeroSection = () => {
 	return (
-		<section className="container flex h-[70vh] justify-end flex-col text-white">
-			<div>
+		<div className="flex h-[90vh] w-full justify-end flex-col text-white bg-dark py-12">
+			<div className="container mx-auto">
 				<h3 className="text-white text-[4rem] font-bold mb-8">
 					All Apple Originals.
 					<br />
@@ -13,7 +13,7 @@ export const HeroSection = () => {
 
 				<Link
 					href="#"
-					className="bg-white text-black rounded-full font-medium px-8 py-4 hover:opacity-90 transition-all tracking-wide mb-20 inline-block">
+					className="bg-white text-black rounded-full font-bold px-8 py-4 hover:opacity-90 transition-all tracking-wide mb-20 inline-block">
 					Stream now
 				</Link>
 
@@ -29,6 +29,6 @@ export const HeroSection = () => {
 					app.
 				</p>
 			</div>
-		</section>
+		</div>
 	);
 };

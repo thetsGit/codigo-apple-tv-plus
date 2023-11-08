@@ -8,7 +8,7 @@ export const Navbar = () => {
 
 				<Link
 					href="#"
-					className="bg-white text-black rounded-full text-xs px-2.5 py-0.5 hover:opacity-90 transition-all tracking-wide inline-block">
+					className="bg-white text-black rounded-full text-xs font-bold px-2.5 py-0.5 hover:opacity-90 transition-all tracking-wide inline-block">
 					Stream now
 				</Link>
 			</div>
