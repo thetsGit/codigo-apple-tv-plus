@@ -11,6 +11,7 @@ import {
 } from "@/app/components/home";
 import dynamic from "next/dynamic";
 import { HeroVideoToggler } from "@/app/components/home/HeroVideo/HeroVideoToggler";
+import { AnimatedOverlay } from "@/app/components/utils/AnimatedOverlay";
 
 const HeroVideo = dynamic(() => import("@/app/components/home/HeroVideo"), {
 	ssr: false,
@@ -27,6 +28,8 @@ export default function Home() {
 				setIsLoading={setIsHeroVideoLoading}
 			/>
 
+			<AnimatedOverlay className="z-animatedOverlay" />
+
 			<HeroVideoToggler
 				play={isHeroVideoPlaying}
 				setPlay={setIsHeroVideoPlaying}
@@ -42,14 +45,3 @@ export default function Home() {
 		</main>
 	);
 }
-
-// parallex
-// background video (with play / pause button - which will be separately existed)
-
-// sections
-// (1) hero texts -> half transparent - half black
-// (2) pricing
-// (3) scroll based animated carousel
-// (4) marquee sliders
-// (5) watch from anywhere
-// (6) footer

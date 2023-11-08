@@ -1,4 +1,17 @@
-export const PRICINGS = [
+type LinkType = {
+	label: string;
+	to: string;
+};
+
+export type Price = {
+	eyebrow: string;
+	title: string;
+	description: string;
+	link: LinkType;
+	learnMoreLink?: string;
+};
+
+export const PRICINGS: Array<Price> = [
 	{
 		eyebrow: "Buy an Apple device",
 		title: "3 months free.",

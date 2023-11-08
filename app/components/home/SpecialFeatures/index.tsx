@@ -1,15 +1,12 @@
 import { SPECIAL_FEATURES } from "@/app/data";
+import { AnimatedFeatureItem } from "./AnimatedFeatureItem";
 
 export const SpecialFeatures = () => {
 	return (
-		<div className="w-full bg-dark py-12 z-mainContent">
+		<div className="w-full py-12 z-mainContent relative">
 			<ul className="container mx-auto">
 				{SPECIAL_FEATURES.map((feature) => (
-					<li
-						className="text-white mb-10 text-[3.125rem] font-bold max-w-[1200px] leading-tight"
-						key={feature}>
-						{feature}
-					</li>
+					<AnimatedFeatureItem key={feature} name={feature} />
 				))}
 			</ul>
 		</div>

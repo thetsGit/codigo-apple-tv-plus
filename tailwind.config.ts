@@ -30,6 +30,7 @@ const config: Config = {
 				navBar: "1000",
 				heroVideoToggler: "500",
 				mainContent: "100",
+				animatedOverlay: "50",
 				heroVideo: "10",
 			},
 		},
